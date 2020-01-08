@@ -1,0 +1,15 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet">
+<p id="notice"><%= notice %></p>
+
+<p class="emotion_title">
+  <strong>Titre:</strong>
+  <%= @emotion.titre %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @emotion.description %>
+</p>
+
+<%= link_to 'Edit', edit_emotion_path(@emotion) %> |
+<%= link_to 'Back', emotions_path %>
