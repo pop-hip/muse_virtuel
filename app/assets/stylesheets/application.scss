@@ -13,11 +13,5 @@
  *= require_tree .
  *= require_self
  */
-.emotion_title{
-	font-family: 'Poppins', sans-serif;
-	font-size: 20 px;
-	text-align: center;
-	font-weight: 100;
-}
 /* Custom bootstrap variables must be set or imported *before* bootstrap.*/
 @import "bootstrap";
