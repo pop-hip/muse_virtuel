@@ -2,15 +2,19 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins:100,400&display=swap" rel="stylesheet">
 <h1 class="title_expo">Expo temporaire : L'émotion dans l'art</h1>
 
+    <% @emotions.each do |emotion| %>
 <table>
   <thead>
     <tr>
+      <th><%= emotion.titre %></th>
+      <th><%= emotion.description %></th>
+      <th><%= link_to 'Show', emotion %></th>
+      <th><%= link_to 'Edit', edit_emotion_path(emotion) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @emotions.each do |emotion| %>
       <tr>
         <td><%= link_to 'Destroy', emotion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -18,13 +22,13 @@
 </table>
 <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><%= emotion.titre %></text></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
             <div class="card-body">
-              <p class="card-text"><%= emotion.description %></p>
+              <p class="card-text"><</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Show', emotion %></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Edit', edit_emotion_path(emotion) %></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"></button>
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
